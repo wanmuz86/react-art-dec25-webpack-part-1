@@ -1,0 +1,15 @@
+{
+   "compilerOptions": {
+     "target": "es5",
+     "module": "esnext",
+     // loading typescript for react
+     "jsx": "react",
+     // typescript configuration - strict mode is enabled
+     "strict": true,
+     "esModuleInterop": true,
+     "skipLibCheck": true,
+     "forceConsistentCasingInFileNames": true
+   },
+   // enabled for everything inside src folder
+   "include": ["src/**/*"]
+ }
