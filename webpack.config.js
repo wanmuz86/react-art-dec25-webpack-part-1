@@ -40,6 +40,25 @@ module.exports = {
          },
        },
      },
+     {
+      // if it is endeed with .css use style-loader and css-loader
+      test:/\.css$/,
+      use:['style-loader','css-loader']
+     },
+     {
+      test:/\.(png|jpg|gif|svg)$/,
+      use:[
+          {
+          loader:'file-loader',
+          // build configuration for the images
+          options: {
+            name:'[name].[hash].[ext]', // renaming it using following format
+            outputPath:'assets', // move to assets folder
+          }
+        }
+
+      ]
+     }
    ],
  },
  plugins: [
